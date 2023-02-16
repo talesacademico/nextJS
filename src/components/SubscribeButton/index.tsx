@@ -1,12 +1,12 @@
 import styles from './styles.module.scss'
 
-interface SubscribeButtonPros{
-    stripe:{
+interface SubscribeButtonPros {
+    stripe: {
         periceId: number
     }
 }
 
-export function SubscribeButton({stripe}: SubscribeButtonPros) {
+export function SubscribeButton({ stripe }: SubscribeButtonPros) {
     console.log(stripe)
     return (
         <button

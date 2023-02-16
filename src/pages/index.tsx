@@ -28,7 +28,7 @@ export default function Home({product}: Product) {
               Get acecess to al the publications<br/>
               <span>for {product.amout} moth</span>
             </p>
-        <SubscribeButton/>
+        <SubscribeButton stripe={55}/>
         </section>
       </main>
     </>
