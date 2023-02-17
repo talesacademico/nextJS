@@ -13,11 +13,10 @@ interface Product{
 }
 
 export default function Home({product}: Product) {
-
   return (
     <>
       <Head>
-        <title>Inicio | ignews</title>
+        <title>NextJS</title>
       </Head>
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
@@ -28,7 +27,7 @@ export default function Home({product}: Product) {
               Get acecess to al the publications<br/>
               <span>for {product.amout} moth</span>
             </p>
-        <SubscribeButton stripe={55}/>
+        <SubscribeButton priceId={55}/>
         </section>
       </main>
     </>
@@ -36,7 +35,6 @@ export default function Home({product}: Product) {
   }
 
   export const getServerSideProps: GetServerSideProps = async ()=>{
-
     const price = await stripe.prices.retrieve('price_1MZv8nCHEb7cRJQ3cAMPcMZi',{
       expand:['product']
     })
@@ -58,3 +56,5 @@ export default function Home({product}: Product) {
     return{props:{}}
     
   }
+
+  //getStectProps

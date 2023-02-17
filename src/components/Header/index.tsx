@@ -5,7 +5,7 @@ export function Header(){
     return (
         <header className={style.headerContainer}>
             <div className={style.headerContent}>
-                <img src="" alt="ignews" />
+                <h1>Next.JS</h1>
                 <nav>
                     <a className={style.active}>Home</a>
                     <a>Post</a>

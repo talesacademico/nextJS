@@ -1,38 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React/Next
+<hr style="height:1px">
 
-## Getting Started
+### React
+  <li>SPA - Single-page Application</li>
+  <img src="./src/img/spa.png" width="400px" />
+  
+  ### Next
+  <li>SSR -  Serve side Rendering</li>
+  <img src="./src/img/ssr.png" width="500px" />
 
-First, run the development server:
+Ambos podem ultizar o <b>TypeScript</b> para tipagem da liguagem JavaScript 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<h4>React & Next</h4>
+<p>O React injeta Html, CSS e elementos via javaScript. Por exemplo, o cliente 
+recebe um objeto em JSON, javaScript na página fica encarregado de construir os componentes e estilos para mostrar as informações em tela para o usuário.</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>No Next a rederização do Html é feita pelo servidor. O servidor mota o Html com as informação e envia para o Browser para ser renderizada no cliente.</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<p>Neste caso o cliente (browser) não tem mais a resposabilidade de motar a página.</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<li>Surgiu para solucionar problema de SO nas SPA's (indexação do conteúdo da página pelos motores de busca)</li>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Conceitos Importantes
+  <li>Componentes</li>
+  <li>Estado</li>
+  <li>Contexto</li>
+  <li>Renderização no Browser (Manipulação de Eventos)</li>
+  <li>API Routes</li>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### CSS
 
-To learn more about Next.js, take a look at the following resources:
+<div style="margin-left:30px">
+<h5>StoryBook</h5>
+  <li>Ferramenta para criação e documentação de componentes em ambientes isolado</li>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <h5>TailwindCSS</h5>
+  <li>Framework CSS para estilização de elementos aplicados diretamente no HTML</li>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <h5>Next Module CSS / SASS</h5>
+  <li>Next Module para CSS cria um scopo de classes CSS em componentes HTML evitando conflito 
+      em outros componentes. Alem disso pode ser combinado com o SAAS, dexando a stilização mais flexivel. (Uma opção para projetos em React e também Next é o styled-components)
+  </li>
+  <h5>UI Components</h5>
+</div>
 
-## Deploy on Vercel
+<hr style="height:1px">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Setup
+
+<hr style="height:1px">
+
+
